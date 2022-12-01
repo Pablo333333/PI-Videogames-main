@@ -1,0 +1,47 @@
+.inputSearch{
+    width: 500px;
+    height: 30px;
+    border-radius: 5px 0px 0px 5px;
+    background-color: rgba(51, 49, 49, 0.63);
+    color: white;
+    box-shadow: 1px 1px 8px rgb(247, 0, 255);
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px solid rgba(255, 0, 0, 0.39);
+}
+
+.buttonSearch{
+    width: 100px;
+    height: 37px;
+    background-color: rgba(0, 0, 0, 0.877);
+    color: azure;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: 1px 1px 8px rgb(247, 0, 255);
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid rgba(255, 0, 0, 0.39);
+}
+
+
+@media (max-width: 992px){
+  
+}
+
+@media (max-width: 768px){
+  
+}
+
+
+@media (max-width: 576px){
+    .inputSearch{
+        width: 60%;
+        height: 10%;
+        font-size: 80%;
+    }
+    .buttonSearch{
+        width: 15%;
+        height: 15%;
+        font-size: 80%;
+    }
+}
