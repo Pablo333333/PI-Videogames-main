@@ -32,7 +32,6 @@ let sequelize =
           native: false,
         }
       );
-5
 // const sequelize = new Sequelize(
 //   `postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/videogames`,
 //   {
