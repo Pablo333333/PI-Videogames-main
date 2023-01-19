@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Link, useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { getGenres, getVideogames, postVideogame} from "../actions";
 import './CreateVideogame.css'
 
@@ -139,7 +139,7 @@ export default function CreateVideogame(){
 		
 	}
 
-	function handleReset(e){
+	/*function handleReset(e){
 		setInput({
 			name: '',
 			description: '',
@@ -149,7 +149,7 @@ export default function CreateVideogame(){
 			genres:[],
 			platforms: [],
 		});
-	}
+	}*/
 
 	return(
 		<div className="divTot">

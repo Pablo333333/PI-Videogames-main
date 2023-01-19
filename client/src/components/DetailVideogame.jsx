@@ -11,7 +11,7 @@ export default function DetailVideogame(props){
 
 	useEffect(()=> {
 		dispatch(getDetail(props.match.params.id))
-	},[dispatch]);
+	},[]);
 
 	return(
 		<>

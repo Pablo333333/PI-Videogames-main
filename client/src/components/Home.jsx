@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getVideogames, getGenres, filterBy, OrderByName, OrderByRating, filterByRating } from "../actions";
+import { getVideogames, getGenres, filterBy, OrderByName, OrderByRating } from "../actions";
 import { Link } from 'react-router-dom';
 import Paginate from './Paginate';
 import Card from './Card'
@@ -11,10 +11,10 @@ export default function Home(){
 	const dispatch = useDispatch();
 	const allVideogames = useSelector((state) => state.videogames);
 	const videogames = useSelector((state) => state.allVideogames)
-	const [orderPage, setOrderPage] = useState()
+	const [, setOrderPage] = useState()
 	const genres = useSelector((state) => state.genres);
 	const [currentPage, setCurrentPage] = useState(1);
-	const [videogamesPerPage, setVideogamesPerPage] = useState(15);
+	const [videogamesPerPage,] = useState(15);
 	const numLastVideogame = videogamesPerPage*currentPage;
 	const numFirstVideogame = numLastVideogame - videogamesPerPage;
 	const currentVideogames = allVideogames.slice(numFirstVideogame, numLastVideogame);
@@ -38,11 +38,6 @@ export default function Home(){
 
 	function handleFilterGenre(e){
 		dispatch(filterBy(e.target.value))
-		setCurrentPage(1)
-	}
-
-	function handleFilterRating(){
-		dispatch(filterByRating())
 		setCurrentPage(1)
 	}
 

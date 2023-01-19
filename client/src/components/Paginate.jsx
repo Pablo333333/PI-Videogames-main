@@ -11,7 +11,7 @@ export default function Paginate({ videogamesPerPage, allVideogames, paginado })
     <nav>
       <div className='divPaginate'>
           {pageNumbers?.map(el =>
-            <a className='paginate' key={el} onClick={() => paginado(el)}>{el}</a>
+            <button className='paginate' key={el} onClick={() => paginado(el)}>{el}</button>
           )}
       </div>
     </nav>
