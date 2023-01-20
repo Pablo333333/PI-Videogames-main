@@ -3,7 +3,10 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import LandingPage from './components/LandingPage';
 import Home from './components/Home';
 import DetailVideogame from './components/DetailVideogame';
-import CreateVideogame from './components/CreateVideogame'
+import CreateVideogame from './components/CreateVideogame';
+import axios from 'axios';
+
+axios.defaults.baseURL = 'https://pi-videogames-main-production-e5ec.up.railway.app/';
 
 function App() {
   return (
